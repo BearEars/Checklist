@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- page thngs -->
+  <title>Checklist</title>
+  <link rel="icon" type="image/png" href="./assets/icons8-lista-64.png" />
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+
+  <!-- font-awesome icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <link rel="stylesheet" href="CSS/Form/form.css">
+  <link rel="stylesheet" href="CSS/Cards/cards.css">
+</head>
+
+<body>
+  <main>
+    <div class="mainCard">
+      <div class="titleImg"><img src="./assets/icons8-lista-64.png" alt="List icon" /></div>
+      <div>
+        <form action="">
+          <input type="text" name="task" placeholder="Nombre de la tarea" class="inputForm" autocomplete="off"
+            maxlength="25" data-form-input />
+          <button type="submit" class="btnCreate" data-form-btn>
+            Agregar <i class="fas fa-plus-circle"></i>
+          </button>
+        </form>
+      </div>
+      <ul class="cardsList" data-list>
+      </ul>
+    </div>
+    <div class="iconsLink">
+      <p>Icons by </p>
+      <a class="icons8" target="_blank" href="https://icons8.com">
+        Icons8
+      </a>
+    </div>
+  </main>
+  <script type="module" src="components/createTask.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>

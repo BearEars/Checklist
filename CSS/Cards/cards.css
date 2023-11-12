@@ -1,0 +1,96 @@
+.cardsList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    max-height: 60vh;
+    height: 60vh;
+}
+
+.card {
+    width: 90%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin: 5px 0px;
+    position: relative;
+    animation-name: show;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+}
+
+.task {
+    padding: 10px;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: rgba(62, 161, 219, 1);
+}
+
+.completeIcon {
+    color: rgba(62, 161, 219, 1);
+}
+
+.trashIcon:hover {
+    color: #f00;
+}
+
+.deleteConfirmationPop {
+    position: relative;
+    background-color: rgba(255, 255, 255);
+    z-index: 99;
+    width: 100%;
+    top: -100px;
+    left: 0;
+}
+
+.deleteSpace {
+    position: relative;
+    width: 30%;
+}
+
+.noTasks {
+    font-size: 48px;
+}
+
+@keyframes show {
+    0% {
+        scale: 0;
+    }
+
+    25% {
+        scale: 0.25;
+    }
+
+    50% {
+        scale: 0.50;
+    }
+
+    75% {
+        scale: 0.75;
+    }
+
+    100% {
+        scale: 1;
+    }
+
+}
+
+
+/* responsive mobile */
+@media screen and (max-width:767px) {
+    .card {
+        width: 80%;
+    }
+
+}

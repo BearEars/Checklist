@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Edu TAS Beginner', sans-serif;
+  font-size: 16px;
+}
+
+main {
+  background-image: linear-gradient(109.6deg,
+      #360033, #0b8793);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.iconsLink {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  bottom: 15px;
+  color: #fff;
+}
+
+.icons8 {
+  color: #fff;
+  margin-left: 5px;
+  border-bottom: #fff solid 1px;
+}

@@ -1,0 +1,68 @@
+form {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.mainCard {
+    width: 40vw;
+    border-radius: 25px;
+    background-color: #fff;
+    padding: 25px;
+}
+
+.titleImg {
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 15px;
+}
+
+.inputForm {
+    border: none;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    outline: none;
+    width: 65%;
+}
+
+.inputForm::placeholder {
+    padding: 5px;
+}
+
+.btnCreate {
+    padding: 10px 15px;
+    background-image: linear-gradient(109.6deg,
+            rgba(62, 161, 219, 1) 11.2%,
+            rgba(93, 52, 236, 1) 100.2%);
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* responsive tablet  */
+
+@media screen and (min-width: 768px) and (max-width:1025px) {
+    .mainCard {
+        width: 70vw;
+
+    }
+
+}
+
+/* responsive mobile  */
+@media screen and (max-width:767px) {
+    .mainCard {
+        width: 85vw;
+
+    }
+
+    .fa-plus-circle {
+        display: none;
+    }
+}
